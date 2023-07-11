@@ -110,6 +110,8 @@ html{
 }
 .txt-init p{
     padding: 0 30px;
+    text-align: justify;
+    margin: 0;
 }
 
 
@@ -413,7 +415,7 @@ main section .accordion-item{
     
     #txt-init .container{
         width: 100%;
-        max-width: 1200px;
+        max-width: 850px;
         padding: 50px 80px;
     }
 
