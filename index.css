@@ -121,6 +121,13 @@ html{
     justify-content: center;
     flex-wrap: wrap;
 }
+.img_container .containerImg:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .containerImg figure{
     position: relative;
     height: 430px;
@@ -158,7 +165,6 @@ html{
     margin-top: 20px;
     margin-bottom: 20px;
 } 
-
 .containerImg figure .capa h3{
     color: #9d7e5f;
     font-size: 1.4em;
@@ -194,12 +200,13 @@ html{
     padding: 0 40px;
 }
 
+
 button{
     border: 0;
 }
 #videos-explicativos figure button{
     border-radius: 20px;
-    width: 100%;
+    width: 320px;
     height: 220px;
     background-image: url(img/home.png);
     background-size: cover;
@@ -207,22 +214,34 @@ button{
     background-repeat: no-repeat;
     margin-bottom: 10px;
 }
-#videos-explicativos .container{
+#videos-explicativos .videos-container{
+    display: flex;
+    align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 #videos-explicativos .container h2{
     font-size: 3em;
     font-family: 'Dancing Script';
     padding-bottom: 20px;
     color: #4a353f;
+    text-align: center;
 }
 .videos{
     background-color: transparent;
+    padding: 20px;
+}
+#videos-explicativos .texto-video{
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
 }
 #videos-explicativos .mas{
     margin-top: 25px;
     padding-bottom: 50px;
+    text-align: center;
 }
 .container .mas a{
     text-decoration: none;
@@ -234,42 +253,7 @@ button{
     background-color: #4a353f80;
     border-radius: 20px;
 }
-#videos-explicativos .texto-video{
-    margin: 0;
-    padding: 0 20px;
-}
-#videos-explicativos .texto-video p{
-    text-align: justify;
-    font-size: 0.8em;
-    padding-bottom: 20px;
-}
 
-
-.questions .row{
-    margin: 0;
-}
-.container-faq {
-    padding: 0 ;
-}
-.container-faq .title-faq {
-    color: #000000;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-.container-faq .item-faq {
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-.container-faq .item-faq .question {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #c8b6ae;
-    padding: 15px;
-    transition: 0.4s;
-}
 /*
     #9d7e5f
     #a98c98
@@ -278,6 +262,8 @@ button{
     #a29595
     #aa9d8b
 */
+
+
 main{
     display: flex;
     align-items: center;
@@ -419,17 +405,19 @@ main section .accordion-item{
         padding: 50px 80px;
     }
 
-    .img_container .containerImg:first-child{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+
     .containerImg figure{
-        height: 450px;
-        width: 330px;
+        height: 350px;
+        width: 250px;
     }
+    .containerImg figure .capa h3{
+        font-size: 1.2em;
+    }
+    .containerImg figure .capa p{
+        font-size: 0.75em;
+    }
+
+
     #sobre-mi .container{
         display: flex;
         justify-content: center;
@@ -446,7 +434,6 @@ main section .accordion-item{
     #sobre-mi h2{
         text-align: center;
     }
-    
     #sobre-mi p{
         padding: 0;
     }
@@ -460,10 +447,15 @@ main section .accordion-item{
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
     }
+
+
     #videos-explicativos{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .videos{
+        padding: 0;
     }
     #videos-explicativos .container .mas{
         margin-top: 0;
@@ -487,13 +479,13 @@ main section .accordion-item{
         height: 50%;
         width: 90%;
     }
-    section figure .texto-video p{
-        padding: 0 10px;
-    }
     
+
     .swiper{
         width: 40%;
     }
+
+
     #contacto .icons img{
         margin: 0 25px;
     }
