@@ -380,6 +380,13 @@ main section .accordion-item .accordion-header button{
     margin: 0 15px;
     flex-direction: column;
 }
+#contacto p{
+    font-size: 0.7em;
+    width: 100%;
+    text-align: end;
+    margin: 0;
+}
+
 
 
 
@@ -398,17 +405,16 @@ main section .accordion-item .accordion-header button{
     .nav.active{
         padding: 10px 40px;
     }
-    
+
     #hero{
         background-size: contain;
     }
-    
+
     #txt-init .container{
         width: 100%;
         max-width: 1200px;
         padding: 50px 80px;
     }
-
 
     .containerImg figure{
         height: 350px;
@@ -420,7 +426,6 @@ main section .accordion-item .accordion-header button{
     .containerImg figure .capa p{
         font-size: 0.75em;
     }
-
 
     #sobre-mi .container{
         display: flex;
@@ -452,7 +457,6 @@ main section .accordion-item .accordion-header button{
         border-bottom-right-radius: 50px;
     }
 
-
     #videos-explicativos{
         display: flex;
         align-items: center;
@@ -483,15 +487,13 @@ main section .accordion-item .accordion-header button{
         height: 50%;
         width: 90%;
     }
-    
 
     .swiper{
         width: 700px;
         
     }
 
-
     #contacto .icons img{
-        margin: 0 25px;
+        margin: 0 15px;
     }
 }
