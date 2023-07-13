@@ -372,8 +372,6 @@ main section .accordion-item .accordion-header button{
     text-align: center;
 }
 #contacto .icons img{
-    width: 2.5em;
-    height: auto;
     margin: 0 15px;
     flex-direction: column;
 }
@@ -496,5 +494,8 @@ main section .accordion-item .accordion-header button{
 
     #contacto .icons img{
         margin: 0 15px;
+        width: 40px;
+        height: 40px;
     }
+
 }
