@@ -51,18 +51,17 @@ html{
     padding: 25px 0;
     text-align: center;
     align-items: center;
-    justify-content:center;
+    justify-content: space-evenly;
     transition: all 0.4s ease;
     z-index: 900;
 }
 .nav a{
     color: #ffffff;
-    padding: 5px 8px;
-    margin: 0 2px;
+    padding: 10px 15px;
     text-decoration: none;
     text-align: center;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 .nav a:hover{
     background-color: #4a353f80;
@@ -201,19 +200,17 @@ html{
 }
 
 
-button{
-    border: 0;
-}
-#videos-explicativos figure button{
+#videos-explicativos figure a img{
     border-radius: 20px;
-    width: 320px;
-    height: 220px;
+    width: 300px;
+    height: 200px;
     background-image: url(img/home.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     margin-bottom: 10px;
 }
+
 #videos-explicativos .videos-container{
     display: flex;
     align-items: center;
@@ -287,6 +284,9 @@ main section .accordion-item .accordion-header button{
     background: #c8b6ae;
     color: #4a353f;
     font-size: 0.7em;
+}
+main section .accordion-item .accordion-header button #text{
+    padding-right: 20px;
 }
 .accordion-item .accordion-body{
     font-size: 1em;
@@ -391,7 +391,6 @@ main section .accordion-item .accordion-header button{
         padding: 25px 40px;
     }
     .nav a{
-        padding: 10px 10px;
         margin: 0 20px;
     }
     .nav a:hover{
@@ -442,7 +441,7 @@ main section .accordion-item .accordion-header button{
         padding: 0;
     }
     #sobre-mi .img-sobre-mi{
-        background-image: url(img/sobremi.jpeg);
+        background-image: url(img/sobremi2.jpeg);
         background-size: cover;
         background-position: center center;
         height: 350px;
@@ -474,13 +473,6 @@ main section .accordion-item .accordion-header button{
         position: relative;
         height: 300px;
         width: 320px;
-    }
-    #video-exlicativos button{
-        cursor: pointer;
-    }
-    #videos-explicativos figure button{
-        height: 60%;
-        width: 90%;
     }
     #videos-explicativos .mas{
         padding-bottom: 50px;
