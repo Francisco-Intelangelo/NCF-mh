@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -212,7 +211,7 @@ html{
 }
 #videos-explicativos a img{
     border-radius: 20px;
-    width: 300px;
+    width: 280px;
     height: 200px;
     margin: 10px;
 }
@@ -421,7 +420,7 @@ html{
         margin-right: 50px;
         width: 50%;
         padding-left: 30px;
-        max-width: 400px;
+        max-width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
