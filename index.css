@@ -31,7 +31,7 @@ html{
     visibility: hidden;
 }
 
-#txt-init, #fuerzas, #sobre-mi, #videos-explicativos, main, .search, .movies{
+#txt-init, #fuerzas, #sobre-mi, #videos-explicativos, .accordion-main, .search, .movies{
     background-color: #ad9388;
     /*
     #a98c98
@@ -200,16 +200,7 @@ html{
 }
 
 
-#videos-explicativos figure a img{
-    border-radius: 20px;
-    width: 300px;
-    height: 200px;
-    background-image: url(img/home.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-bottom: 10px;
-}
+
 
 #videos-explicativos .videos-container{
     display: flex;
@@ -219,6 +210,16 @@ html{
     flex-direction: row;
     flex-wrap: wrap;
 }
+#videos-explicativos a img{
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+.container .videos-container a{
+    text-decoration: none; 
+    color: #4a353f;
+}
 #videos-explicativos .container h2{
     font-size: 3em;
     font-family: 'Dancing Script';
@@ -226,17 +227,8 @@ html{
     color: #4a353f;
     text-align: center;
 }
-.videos{
-    background-color: transparent;
-    padding: 20px;
-}
-#videos-explicativos .texto-video{
-    margin: 0;
-    padding: 0 20px;
-    text-align: center;
-}
-#videos-explicativos .mas{
-    margin-top: 25px;
+#videos-explicativos .container .mas{
+    margin-top: 40px;
     padding-bottom: 50px;
     text-align: center;
 }
@@ -261,31 +253,31 @@ html{
 */
 
 
-main{
+.accordion-main{
     display: flex;
     align-items: center;
 }
-main section{
+.accordion-main section{
     max-width: auto;
     height: 100%;
 }
-main section h1{
+.accordion-main section h1{
     font-size: 3em;
     color: #4a353f;
     font-family: 'Dancing Script';
     text-align: center;
     padding: 20px 0;
 }
-main section .accordion-item{
+.accordion-main section .accordion-item{
     border: 0;
     background: #c8b6ae;
 }
-main section .accordion-item .accordion-header button{
+.accordion-main section .accordion-item .accordion-header button{
     background: #c8b6ae;
     color: #4a353f;
     font-size: 0.7em;
 }
-main section .accordion-item .accordion-header button #text{
+.accordion-main section .accordion-item .accordion-header button #text{
     padding-right: 20px;
 }
 .accordion-item .accordion-body{
@@ -456,27 +448,12 @@ main section .accordion-item .accordion-header button #text{
         align-items: center;
         justify-content: center;
     }
-    .videos{
-        padding: 0;
-    }
-    #videos-explicativos .container .mas{
-        margin-top: 0;
-    }
     .videos-container{
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
-    }
-    #videos-explicativos figure{
-        position: relative;
-        height: 300px;
-        width: 320px;
-    }
-    #videos-explicativos .mas{
-        padding-bottom: 50px;
-        text-align: center;
     }
 
     .swiper{
