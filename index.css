@@ -32,13 +32,13 @@ html{
 
 #txt-init, #fuerzas, #sobre-mi, #videos-explicativos, .accordion-main, .search, .movies{
     background-color: #ad9388;
-    /*
+}
+/*
     #a98c98
     #8aaaab
     #ad9388
     #a29595
-    */
-}
+*/
 .container{
     max-width: 100%;
 }
