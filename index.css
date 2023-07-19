@@ -100,7 +100,7 @@ html{
     padding: 50px 0;
     text-align: center;
 }
-.txt-init h1{
+.txt-init h2{
     padding: 10px 0;
     font-size: 2.3em;
     color: #4a353f;
@@ -260,7 +260,7 @@ html{
     max-width: auto;
     height: 100%;
 }
-.accordion-main section h1{
+.accordion-main section #preguntas{
     font-size: 3em;
     color: #4a353f;
     font-family: 'Dancing Script';
@@ -438,6 +438,7 @@ html{
         height: 350px;
         width: 280px;
         margin-left: 50px;
+        margin-top: 150px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
     }
